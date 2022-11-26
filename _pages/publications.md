@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: My research work publications in various conferences, journals, and blogs.
-years: [2012, 2018, 2020, 2021, 2022]
+years: [2012, 2018, 2021, 2022]
 nav: true
 nav_order: 1
 ---
