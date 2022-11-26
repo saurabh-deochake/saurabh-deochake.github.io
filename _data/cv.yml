@@ -2,72 +2,82 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Saurabh Deochake
     - name: Date of Birth
-      value: 14th March 1879
+      value: 04th October
     - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      value: English, Hindi, Marathi, Gujarati
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Staff Site Reliability Engineer
+      institution: Twitter, Boulder, Colorado, US
+      year: 2019 - Current
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed the technical strategy and roadmap as a Tech Lead for the Twitter's Google Cloud infrastructure team supporting teams running data and
+machine learning workloads Google Cloud and Twitter's data centers
+        - Designed and implemented BigBird: Twitter's exabyte-scale Big Data storage and analytics solution in Google Cloud that powers big data analytics
+and other key data warehouse functions of Twitter
+        - Led infrastructure cost efficiency efforts: designed and implemented CloudHawk, a FinOps service for efficient cloud cost management at Twitter
+saving more than $5M per year in OpEx
+        - Implemented GCP Admin, a RESTful service that enables self-service workflows to manage Google Cloud projects and resources for Twitter
+engineers; Reduced the turnaround time from 2 days to 3 minutes improving the velocity of public cloud adoption at Twitter
+        - Partnered with 300+ Twitter teams to consult, design, develop, and ship their products by leveraging public cloud technologies across Google Cloud
+(GCP) and Amazon Web Services (AWS)
+        - Received more than 30 spot awards from Twitter teams and peers recognizing various team and cross-organizational projects
+    
+    - title: Site Reliability Engineer
+      institution: Societe Generale, New York, New York, US
+      year: 2018 - 2018
       description:
-        - Description 1.
-        - Description 2.
+        - Developed low-latency monitoring solutions to monitor a distributed high-frequency trading infrastructure using Python, Bash, Elasticsearch, Logstash, and Kibana; Achieved three times faster performance compared to legacy monitoring solutions
+        - Designed and contributed to setting up the Internal Stock Market- a distributed system to facilitate trading for the clients of the bank globally
+        - Implemented Ansible Playbooks to automate frequent tasks and maintain uniform configuration across the infrastructure of ~1000 servers
+        - Provided active production support by resolving the issues at the application level, UNIX level, or network level to ensure high availability and low latency for users across the world
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Cloud Software Engineer Intern
+      institution: Intel Corporation, Hillboro, Oregon, US
+      year: 2017 - 2017
       description:
+        - Researched on NVMe over Fabrics (NVMe-oF) with solid state drive to derive a scalable, low latency, and high-performance cloud storage solution in Intel Rack Scale DesignTM data centers
+        - Implemented 'conio' - a command-line tool for automated I/O benchmarking of Docker containers on NVMe volumes using Python. This tool is used by several teams for quick I/O benchmarking of containers
+        - Developed and contributed to Intel Snap plugin using Go to extract NVMe-based cloud storage telemetry and monitor NVMe over Fabrics using Docker containers orchestrated by Kubernete
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Software Engineer (R&D)
+      institution: NTT Data Americas, Pune, Maharashtra, India
+      year: 2012 - 2014
+      description:
+        - Implemented Central Logging System and 'Backup and Restore' System of GresCubeTM: a commercial distributed database service that guarantees minimal downtime and enhanced business continuity using Python
+        - Architectured six times faster disaster recovery operations module using various file synchronization, archive, and transfer utilities upon customer’s requirements after the Megaquake of Japan by designing high availability services inside containers on RHEL Linux
+        - Analyzed and performed extensive research on issues with virtualization overhead caused by LXC Containers, KVM and OpenVZ, for distributed databases whose outcome became the foundation of GresCubeTM
+        - Developed Puppet and Kickstart scripts to automate the creation of web server components called PROSSIONE
 
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Master of Science
+      institution: Rutgers University, New Jersey, USA
+      year: 2017
+      description:
+        - Master of Science in Computer Science (Distributed Systems)
+        - Graduated with GPA 3.4
+    - title: Bachelor of Engineering
+      institution: University of Pune, India
+      year: 2012
+      description:
+        - Bachelor of Engineering (BE) in Information Technology
+        - Graduated with First Class with Distinction
 
+- title: Blogs and YouTube Videos
+  type: time_table
+  contents:
+    - title: Smooth Sailing: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
+      year: 2022
+      description: A Google Cloud blog discussing how Twitter implemented big data storage hierarchy in Google Cloud. You can <href>read the blog here.
+title: Smooth Sailing: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
+      year: 2022
+      description: A Google Cloud blog discussing how Twitter implemented big data storage hierarchy in Google Cloud. You can <a href=https://cloud.google.com/blog/products/data-analytics/the-resource-hierarchy-for-adopting-google-cloud-bigquery-across-twitter>read the blog here</a>.
 - title: Honors and Awards
   type: time_table
   contents:
@@ -82,14 +92,14 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Multi-agent Systems
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Automated negotiation among multi-party scenarios of intelligent systems
+        - Applications of Multi-agent Systems in Cloud Computing
+    - title: Big Data
       items:
-        - Description 1.
-        - Description 2.
+        - Big data placement techniques
+        - Big data storage and analytics in the cloud
 
 - title: Other Interests
   type: list
