@@ -2,7 +2,7 @@
 layout: post
 title: LXC Containers Not Authorized to Change Passwords
 date: 2018-05-17
-description: How to fix the error - `..... is not authorized to change the password of <user_name>`
+description: 'How to fix the error - "..... is not authorized to change the password"'
 comments: true
 tags: cloud containers sre devops lxc troubleshooting
 categories: troubleshooting
