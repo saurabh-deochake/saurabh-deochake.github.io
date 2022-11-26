@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: My YouTube video with Google
+date: 2022-10-09 6:00:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+<a href=https://youtu.be/Pym8Evbf7Ak> YouTube video</a> featuring me that discusses how Twitter maximizes performance with Google BigQuery is now published.
