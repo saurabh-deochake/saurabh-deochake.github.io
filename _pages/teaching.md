@@ -9,8 +9,6 @@ nav_order: 5
 
 Welcome all students to course CS 110- Introduction to Computer Science and Applications. I will post all important announcements, practice problems and some interesting stuff about computers on this page. 
 
-<img src='assets/img/cs110.jpeg' width="500" height="300" align="middle">
-
 ## Fall 2017 
 ### Class Information
 
@@ -29,7 +27,7 @@ We will meet at following time and location for our classes.
 
 ## Hourly Exam #1
 * Hourly Exam #1 will be conducted on Tuesday, 10th October, 2017 in **Scott Hall Room 123**. Seating arrangements are already out. If you do not have your seat numbers, please contact me at the earliest.
-* Some of important question types are posted in form of a Question Bank. Please click [**here**](http://saurabh-deochake.github.io/cs110/exam1) to access the questions.
+* Some of important question types are posted in form of a Question Bank. Please click [here](http://saurabh-deochake.github.io/cs110/exam1) to access the questions.
 
 ## Downloads
 
@@ -38,7 +36,7 @@ We will meet at following time and location for our classes.
    
 ## Reviews
 
-Read what my previous students had to say about the course. [**Click here.**](https://sirs.ctaar.rutgers.edu/index.php?survey%5Blastname%5D=Deochake&survey%5Bsemester%5D=&survey%5Byear%5D=&mode=name&submit=)
+Read what my previous students had to say about the course. [Click here](https://sirs.ctaar.rutgers.edu/index.php?survey%5Blastname%5D=Deochake&survey%5Bsemester%5D=&survey%5Byear%5D=&mode=name&submit=)
 
 ## Contact Me
 
