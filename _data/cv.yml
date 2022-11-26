@@ -8,7 +8,7 @@
     - name: Date of Birth
       value: 04th October
     - name: Languages
-      value: English, Hindi, Marathi, Gujarati
+      value: English, Hindi, Marathi
 
 - title: Experience
   type: time_table
@@ -104,4 +104,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Roadtripping, Hiking, Football
