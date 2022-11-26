@@ -67,7 +67,7 @@
 - title: Blogs and YouTube Videos
   type: time_table
   contents:
-    - title: Smooth Sailing:: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
+    - title: Smooth Sailing - The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
       year: 2022
       description: A Google Cloud blog discussing how Twitter implemented big data storage hierarchy in Google Cloud. You can <href>read the blog here.
     - title: How Twitter Maximizes Performance with BigQuery; Architecting with Google Cloud; Google Cloud Tech
