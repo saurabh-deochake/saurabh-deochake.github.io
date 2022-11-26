@@ -5,7 +5,7 @@ date: 2022-11-07 16:11:00-0400
 inline: false
 ---
 
-<a href=https://dl.acm.org/doi/abs/10.1145/3538969.3544896>My paper on Identity and access management framework for multi-tenant resources in hybrid cloud</a> is now published by ARES Conference, Vienna, Austria on ACM.
+<a href=https://dl.acm.org/doi/abs/10.1145/3538969.3544896>My paper</a> on Identity and access management framework for multi-tenant resources in hybrid cloud is now published by ARES Conference, Vienna, Austria on ACM.
 
 <!---
 ***
