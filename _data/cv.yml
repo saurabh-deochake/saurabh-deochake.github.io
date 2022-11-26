@@ -17,9 +17,9 @@
       description:
         - Developed the technical strategy and roadmap as a Tech Lead for the Twitter's Google Cloud infrastructure team supporting teams running data and
 machine learning workloads Google Cloud and Twitter's data centers
-        - Designed and implemented BigBird: Twitter's exabyte-scale Big Data storage and analytics solution in Google Cloud that powers big data analytics
+        - Designed and implemented BigBird - Twitter's exabyte-scale Big Data storage and analytics solution in Google Cloud that powers big data analytics
 and other key data warehouse functions of Twitter
-        - Led infrastructure cost efficiency efforts: designed and implemented CloudHawk, a FinOps service for efficient cloud cost management at Twitter
+        - Led infrastructure cost efficiency efforts - designed and implemented CloudHawk, a FinOps service for efficient cloud cost management at Twitter
 saving more than $5M per year in OpEx
         - Implemented GCP Admin, a RESTful service that enables self-service workflows to manage Google Cloud projects and resources for Twitter
 engineers; Reduced the turnaround time from 2 days to 3 minutes improving the velocity of public cloud adoption at Twitter
@@ -47,8 +47,8 @@ engineers; Reduced the turnaround time from 2 days to 3 minutes improving the ve
     - title: Software Engineer (R&D)
       institution: NTT Data Americas, Pune, Maharashtra, India
       year: 2012 - 2014
-      description:
-        - Implemented Central Logging System and 'Backup and Restore' System of GresCubeTM: a commercial distributed database service that guarantees minimal downtime and enhanced business continuity using Python
+      description: 
+        - Implemented Central Logging System and 'Backup and Restore' System of GresCubeTM - a commercial distributed database service that guarantees minimal downtime and enhanced business continuity using Python
         - Architectured six times faster disaster recovery operations module using various file synchronization, archive, and transfer utilities upon customer’s requirements after the Megaquake of Japan by designing high availability services inside containers on RHEL Linux
         - Analyzed and performed extensive research on issues with virtualization overhead caused by LXC Containers, KVM and OpenVZ, for distributed databases whose outcome became the foundation of GresCubeTM
         - Developed Puppet and Kickstart scripts to automate the creation of web server components called PROSSIONE
@@ -72,12 +72,12 @@ engineers; Reduced the turnaround time from 2 days to 3 minutes improving the ve
 - title: Blogs and YouTube Videos
   type: time_table
   contents:
-    - title: Smooth Sailing: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
+    - title: Smooth Sailing:: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
       year: 2022
       description: A Google Cloud blog discussing how Twitter implemented big data storage hierarchy in Google Cloud. You can <href>read the blog here.
-title: Smooth Sailing: The Resource Hierarchy for Adopting Google Cloud BigQuery Across Twitter; Google Cloud Blog
+    - title: How Twitter Maximizes Performance with BigQuery; Architecting with Google Cloud; Google Cloud Tech
       year: 2022
-      description: A Google Cloud blog discussing how Twitter implemented big data storage hierarchy in Google Cloud. You can <a href=https://cloud.google.com/blog/products/data-analytics/the-resource-hierarchy-for-adopting-google-cloud-bigquery-across-twitter>read the blog here</a>.
+      description: A Google Cloud blog discussing how Twitter maximizes data processing on big data in Google Cloud. You can <a href=https://youtu.be/Pym8Evbf7Ak>watch the video here</a>.
 - title: Honors and Awards
   type: time_table
   contents:
