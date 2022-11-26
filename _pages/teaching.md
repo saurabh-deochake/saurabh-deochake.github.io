@@ -7,7 +7,11 @@ nav: true
 nav_order: 5
 ---
 
-Welcome all students to course CS 110- Introduction to Computer Science and Applications. I will post all important announcements, practice problems and some interesting stuff about computers on this page. 
+Welcome all students to course CS 110- Introduction to Computer Science and Applications. I will post all important announcements, practice problems and some interesting stuff about computers on this page.
+
+<br/>
+
+<img src='/assets/img/cs110.jpeg' width="500" height="300" align="middle">
 
 ## Fall 2017 
 ### Class Information
