@@ -5,4 +5,4 @@ date: 2022-06-10 07:59:00-0400
 inline: true
 ---
 
-<a href=https://cloud.google.com/blog/products/data-analytics/the-resource-hierarchy-for-adopting-google-cloud-bigquery-across-twitter>My Google blog</a> on how Twitter uses BigQuery for our big data storage and analytics solution is now published. :tada:
+[My Google blog](https://cloud.google.com/blog/products/data-analytics/the-resource-hierarchy-for-adopting-google-cloud-bigquery-across-twitter) on how Twitter uses BigQuery for our big data storage and analytics solution is now published. :tada:
