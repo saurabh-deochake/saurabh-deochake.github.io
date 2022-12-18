@@ -19,10 +19,9 @@
       description:
         - Developed the technical strategy and roadmap as a Tech Lead for the Twitter's Google Cloud infrastructure team supporting teams running data and machine learning workloads Google Cloud and Twitter's data centers
         - Designed and implemented BigBird - Twitter's exabyte-scale Big Data storage and analytics solution in Google Cloud that powers big data analytics and other key data warehouse functions of Twitter
-        - Led infrastructure cost efficiency efforts - designed and implemented CloudHawk, a FinOps service for efficient cloud cost management at Twitter saving more than $5M per year in OpEx
+        - Led infrastructure cost efficiency efforts - designed and implemented CloudHawk, a FinOps service for efficient cloud cost management at Twitter reducing the OpEx costs
         - Implemented GCP Admin, a RESTful service that enables self-service workflows to manage Google Cloud projects and resources for Twitter engineers; Reduced the turnaround time from 2 days to 3 minutes improving the velocity of public cloud adoption at Twitter
-        - Partnered with 300+ Twitter teams to consult, design, develop, and ship their products by leveraging public cloud technologies across Google Cloud (GCP) and Amazon Web Services (AWS)
-        - Received more than 30 spot awards from Twitter teams and peers recognizing various team and cross-organizational projects
+        - Partnered with Twitter teams to consult, design, develop, and ship their products by leveraging public cloud technologies across Google Cloud (GCP) and Amazon Web Services (AWS)
     
     - title: Site Reliability Engineer
       institution: Societe Generale, New York, New York, US
