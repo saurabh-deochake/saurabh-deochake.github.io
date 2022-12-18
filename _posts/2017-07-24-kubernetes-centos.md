@@ -2,6 +2,7 @@
 layout: post
 title: Kubernetes on CentOS 7.0
 date: 2017-07-24
+comments: true
 description: This is a thorough tutorial on setting up Kubernetes cluster on CentOS 7 servers. This is a step-by-step tutorial which also discusses potential problems that may be faced and how to solve them. 
 tags: cloud kubernetes sre devops
 categories: cloud
