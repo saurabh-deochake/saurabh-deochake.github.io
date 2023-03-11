@@ -9,7 +9,7 @@ profile:
   image: profile_pic.jpeg
   image_circular: true # crops the image to make it circular
   address: >
-    <p>Boulder, CO | Toronto, Canada</p>
+    <p>Boulder, CO | Toronto, ON</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
