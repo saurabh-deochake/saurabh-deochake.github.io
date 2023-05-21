@@ -13,9 +13,18 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Staff Cloud Infrastructure Engineer
+      institution: SentinelOne Inc.
+      year: 2023 - Current
+      description:
+        - Driving the end-to-end automation of the complex cloud infrastructure distributed across several cloud regions around the world
+        - Designing, implementing, and supporting highly-scalable and highly-available infrastructure for the mission-critical AI-powered cybersecurity platform in the cloud
+        - Promoting infrastructure-as-code (IAC) priciples in infrastructure automation in multi-cloud and multi-tenant environments
+        - Applying site reliability engineering principles to large scale multi-cloud, multi-tenant cloud infrastructure and services
+    
     - title: Staff Site Reliability Engineer
-      institution: Twitter, Boulder, Colorado, US
-      year: 2019 - Current
+      institution: Twitter Inc.
+      year: 2019 - 2023
       description:
         - Developed the technical strategy and roadmap as a Tech Lead for the Twitter's Google Cloud infrastructure team supporting teams running data and machine learning workloads Google Cloud and Twitter's data centers
         - Designed and implemented BigBird - Twitter's exabyte-scale Big Data storage and analytics solution in Google Cloud that powers big data analytics and other key data warehouse functions of Twitter
@@ -80,7 +89,10 @@
   contents:
     - year: 2023
       items:
-        - Upcoming judge on 2023 SIIA CODiE Awards
+        - Judge on the 8th Annual America's Best in Business Globee Awards
+    - year: 2023
+      items:
+        - Judge on the Best Big Data Reporting and Analytics Solution category for 2023 SIIA CODiE Awards
     - year: 2022
       items: 
         - Judge on New Products Jury Panel for 2022 Stevie American Business Awards, 2022 Stevie International Business Awards, and 2022 Stevie Asia-Pacific Awards
@@ -99,6 +111,10 @@
       items:
         - Big data placement techniques
         - Big data storage and analytics in the cloud
+    - title: Cloud Computing
+      items:
+        - Cloud Cost Optimization
+        - Applications of AI and Multi-agent Systems in cloud resource negotiation like spot instances and committed use discounts
 
 - title: Other Interests
   type: list
