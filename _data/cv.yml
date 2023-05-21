@@ -33,7 +33,7 @@
         - Partnered with Twitter teams to consult, design, develop, and ship their products by leveraging public cloud technologies across Google Cloud (GCP) and Amazon Web Services (AWS)
     
     - title: Site Reliability Engineer
-      institution: Societe Generale, New York, New York, US
+      institution: Societe Generale
       year: 2018 - 2018
       description:
         - Developed low-latency monitoring solutions to monitor a distributed high-frequency trading infrastructure using Python, Bash, Elasticsearch, Logstash, and Kibana; Achieved three times faster performance compared to legacy monitoring solutions
@@ -42,7 +42,7 @@
         - Provided active production support by resolving the issues at the application level, UNIX level, or network level to ensure high availability and low latency for users across the world
 
     - title: Cloud Software Engineer Intern
-      institution: Intel Corporation, Hillboro, Oregon, US
+      institution: Intel Corporation
       year: 2017 - 2017
       description:
         - Researched on NVMe over Fabrics (NVMe-oF) with solid state drive to derive a scalable, low latency, and high-performance cloud storage solution in Intel Rack Scale DesignTM data centers
@@ -50,7 +50,7 @@
         - Developed and contributed to Intel Snap plugin using Go to extract NVMe-based cloud storage telemetry and monitor NVMe over Fabrics using Docker containers orchestrated by Kubernete
 
     - title: Software Engineer (R&D)
-      institution: NTT Data Americas, Pune, Maharashtra, India
+      institution: NTT Data Americas
       year: 2012 - 2014
       description: 
         - Implemented Central Logging System and 'Backup and Restore' System of GresCubeTM - a commercial distributed database service that guarantees minimal downtime and enhanced business continuity using Python
