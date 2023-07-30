@@ -5,7 +5,7 @@ date:   2023-07-30
 comments: true
 description: Cloud Cost Optimization - Strategies and Case Studies
 tags: cloud gcp aws azure finops economics
-categories: containers
+categories: cloud
 ---
 In the rapidly evolving world of cloud computing, cost optimization has become a critical aspect for businesses and organizations seeking to efficiently leverage the benefits of cloud services. I've been working on a paper titled "Cloud Cost Optimization: A Comprehensive Review of Strategies and Case Studies" for several months now, which delves into the multifaceted realm of cloud cost optimization, exploring various strategies and presenting real-world case studies to demonstrate their practical applications.
 
