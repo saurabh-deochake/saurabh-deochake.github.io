@@ -8,7 +8,7 @@ profile:
   align: right
   image: ED9_9010_sq.png
   image_circular: true # crops the image to make it circular
-  address:
+  address: Boulder, CO
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -20,5 +20,3 @@ I currently work as a Staff Cloud Infrastructure Engineer at SentinelOne in Boul
 I have a master's degree in Computer Science (Distributed Systems) from Rutgers University where I also worked as <a href='teaching'>a part-time lecturer</a>.
 
 Although I live in Boulder, I also call Toronto as my home. In my free time, I am either out on a road trip or hiking in and around Colorado.
-
-<p>&#127968;: &#x1f1fa; &#x1f1f8; Boulder, CO and &#x1f1e8; &#x1f1e6; Toronto, Canada</p>
