@@ -6,7 +6,7 @@ subtitle: <a href='cv'>Site Reliability</a>. Cloud Computing. Multi-agent System
 
 profile:
   align: right
-  image: ED9_9010.png
+  image: ED9_9010_sq.png
   image_circular: true # crops the image to make it circular
   address: >
     <p>Boulder, CO;Toronto, ON</p>
