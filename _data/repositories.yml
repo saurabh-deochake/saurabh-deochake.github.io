@@ -2,6 +2,7 @@ github_users:
   - saurabh-deochake
 
 github_repos:
+  - saurabh-deochake/terraform-google-secret-manager
   - saurabh-deochake/conio
   - saurabh-deochake/snap-plugin-collector-pciessd
   - saurabh-deochake/faas
