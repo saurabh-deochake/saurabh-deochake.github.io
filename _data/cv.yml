@@ -4,7 +4,7 @@
     - name: Full Name
       value: Saurabh Deochake
     - name: Location
-      value: Boulder, CO and Toronto, Canada
+      value: Denver Metropolitan Area, Colorado
     - name: Date of Birth
       value: 04th October
     - name: Languages
@@ -13,7 +13,7 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Senior Staff Cloud Infrastructure Engineer
+    - title: Senior Staff Infrastructure Engineer, Tech Lead
       institution: SentinelOne Inc.
       year: 2023 - Current
       description:
@@ -22,7 +22,7 @@
         - Promoting infrastructure-as-code (IAC) priciples in infrastructure automation in multi-cloud and multi-tenant environments
         - Applying site reliability engineering principles to large scale multi-cloud, multi-tenant cloud infrastructure and services
     
-    - title: Staff Site Reliability Engineer
+    - title: Staff Site Reliability Engineer, Tech Lead
       institution: Twitter Inc.
       year: 2019 - 2023
       description:
@@ -87,6 +87,9 @@
 - title: Extra Curricular
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - Technical Review Committee Member for NeurIPS 2025, SIG KDD 2025/2026, The Web Conference 2026
     - year: 2023
       items:
         - Judge on the 8th Annual America's Best in Business Globee Awards
