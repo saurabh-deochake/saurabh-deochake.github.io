@@ -12,7 +12,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 I currently work as a Senior Staff Infrastructure Engineer at SentinelOne in Colorado. My work focuses on building resilient, large-scale distributed systems and multi-cloud architectures. Previously, I held engineering roles at Twitter, Societe Generale, Intel, and NTT Data, where I specialized in infrastructure reliability and systems performance.
