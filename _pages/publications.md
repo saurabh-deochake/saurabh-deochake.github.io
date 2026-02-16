@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: My research work publications in various conferences, journals, and blogs.
 years: [2025, 2024, 2023, 2022, 2020, 2018, 2012]
 nav: true
