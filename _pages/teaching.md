@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title: teaching
 description: Introduction to Computer Science
 nav: true
 nav_order: 5
