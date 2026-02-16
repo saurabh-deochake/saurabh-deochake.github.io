@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
 subtitle: <span class="font-weight-bold">Senior Staff Engineer</span>. Site Reliability. Cloud Computing. Multi-agent Systems.
 
@@ -15,10 +15,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I currently work as a **Senior Staff Infrastructure Engineer** at **SentinelOne** in Boulder, Colorado. My work focuses on building resilient, large-scale distributed systems and multi-cloud architectures. Previously, I held engineering roles at **Twitter**, **Societe Generale**, **Intel**, and **NTT Data**, where I specialized in infrastructure reliability and systems performance.
+I currently work as a Senior Staff Infrastructure Engineer at SentinelOne in Colorado. My work focuses on building resilient, large-scale distributed systems and multi-cloud architectures. Previously, I held engineering roles at Twitter, Societe Generale, Intel, and NTT Data, where I specialized in infrastructure reliability and systems performance.
 
-### Expertise & Research
-Apart from my professional work, I am actively researching solutions for **multi-party intelligent negotiation in Multi-agent Systems** and their practical applications in **Cloud Computing**. 
+### expertise & research
+Apart from my professional work, I am actively researching solutions for multi-party intelligent negotiation in Multi-agent Systems and their practical applications in Cloud Computing. 
 
 My core expertise includes:
 - **Cloud Infrastructure & SRE**: Designing and operating large-scale Kubernetes clusters and multi-cloud environments.
@@ -28,8 +28,8 @@ My core expertise includes:
 
 I hold a master's degree in **Computer Science (Distributed Systems)** from **Rutgers University**, where I also served as a part-time lecturer in computer science.
 
-### Beyond Engineering
-In my free time, I am usually on a road trip or hiking through the scenic trails of Colorado. I am a firm believer in the intersection of technical excellence and continuous learning.
+### beyond engineering
+In my free time, I am usually on a road trip or hiking through the scenic trails of Colorado.
 
 
 <script type="application/ld+json">
@@ -50,7 +50,7 @@ In my free time, I am usually on a road trip or hiking through the scenic trails
       "name": "Where does Saurabh Deochake work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He is currently a Staff Cloud Infrastructure Engineer at SentinelOne."
+        "text": "He is currently a Senior Staff Infrastructure Engineer at SentinelOne."
       }
     },
     {
