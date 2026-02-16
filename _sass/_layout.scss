@@ -53,3 +53,31 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+
+/*****************************************************************************
+* Breadcrumbs Dark Mode Fix
+*****************************************************************************/
+
+html[data-theme='dark'] {
+  .breadcrumb {
+    background-color: var(--global-bg-color) !important;
+    border-color: var(--global-divider-color) !important;
+  }
+
+  .breadcrumb-item {
+    color: var(--global-text-color) !important;
+
+    a {
+      color: var(--global-theme-color) !important;
+    }
+
+    &.active {
+      color: var(--global-text-color-light) !important;
+    }
+
+    &+.breadcrumb-item::before {
+      color: var(--global-text-color-light) !important;
+    }
+  }
+}

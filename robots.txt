@@ -1,7 +1,27 @@
 ---
 permalink: /robots.txt
 ---
+# Allow all standard crawlers
 User-agent: *
 Disallow:
+
+# Explicitly allow AI-powered search crawlers for visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
