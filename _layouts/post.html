@@ -6,6 +6,47 @@ layout: default
 {%- assign tags = page.tags | join: "" -%}
 {%- assign categories = page.categories | join: "" -%}
 
+{%- assign post_url = page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' -%}
+{%- assign post_image = page.og_image | default: site.og_image -%}
+{%- assign author_name = site.first_name | append: " " | append: site.middle_name | append: " " | append: site.last_name | strip -%}
+
+<!-- BlogPosting Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ post_url }}"
+  },
+  "headline": {{ page.title | jsonify }},
+  "description": "{%- if page.description -%}{{ page.description | escape }}{%- else -%}{{ site.description | escape }}{%- endif -%}",
+  "keywords": "{%- if page.tags -%}{{ page.tags | join: ", " }}{%- elsif page.keywords -%}{{ page.keywords }}{%- else -%}{{ site.keywords | escape }}{%- endif -%}",
+  "articleBody": "{{ content | strip_html | truncatewords: 200 | escape }}",
+  "wordCount": {{ content | strip_html | number_of_words }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{%- if page.last_modified_date -%}{{ page.last_modified_date | date_to_xmlschema }}{%- else -%}{{ page.date | date_to_xmlschema }}{%- endif -%}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ author_name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ author_name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  {% if post_image -%}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{% if post_image contains '://' %}{{ post_image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ post_image }}{% endif %}"
+  },
+  {%- endif %}
+  "inLanguage": "{{ site.lang }}",
+  "url": "{{ post_url }}"
+}
+</script>
+
 {% if page._styles %}
 <!-- Page/Post style -->
 <style type="text/css">
