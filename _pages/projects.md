@@ -3,8 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Fun projects I work on in my free time
-nav: true
-description: Side projects and experiments in cloud infrastructure, AI systems, and distributed computing
+nav: false
 nav_order: 2
 display_categories: [work, fun]
 horizontal: false

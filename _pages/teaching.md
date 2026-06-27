@@ -11,10 +11,20 @@ Welcome all students to course CS 110- Introduction to Computer Science and Appl
 
 <img src='/assets/img/cs110.jpeg' width="500" height="300" align="middle">
 
-## Fall 2017 
+## Fall 2017
 ### Class Information
 
-We will meet at following time and location for our classes. 
+We will meet at following time and location for our classes.
+
+**Class Time and Location:**
+
+| Section | Day | Time | Location |
+|---------|-----|------|----------|
+| Section 01 | Wednesday | 8:25 AM-9:20 AM | RUAB 1230 (Lab 3), College Ave |
+| Section 03 | Wednesday | 10:05 AM-11 AM | RUAB 1220 (Lab 2), College Ave |
+
+* **Office Hours**: Wednesdays 2:30 PM-3:30 PM
+* **Lab Support Hours**: Wednesdays 12:00 PM-2:00 PM
 
 * **Class Time and Location**:       
 
