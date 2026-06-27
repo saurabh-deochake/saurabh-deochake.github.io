@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: cloud infrastructure, distributed systems, kubernetes, pki, site reliability engineering, multi-cloud architecture
+keywords: cloud infrastructure, distributed systems, kubernetes, pki, site reliability engineering, multi-cloud architecture, FinOps, cloud cost optimization, multi-agent systems, AI infrastructure, LLM operations, zero-trust security, machine learning infrastructure, staff engineer
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -60,7 +60,7 @@ max_width: 800px
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/profile_pic.jpeg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -132,7 +132,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Blog
 blog_nav_title: blog
-# blog_description: From tech to travel and everything in between
+blog_description: Insights on cloud infrastructure, AI systems, and distributed computing
 permalink: /blog/:year/:title/
 
 # Pagination
