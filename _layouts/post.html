@@ -47,6 +47,34 @@ layout: default
 }
 </script>
 
+<!-- BreadcrumbList Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ site.url }}{{ site.baseurl }}/blog/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }},
+      "item": "{{ post_url }}"
+    }
+  ]
+}
+</script>
+
 {% if page._styles %}
 <!-- Page/Post style -->
 <style type="text/css">
