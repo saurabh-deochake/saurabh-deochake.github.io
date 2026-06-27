@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Introduction to Computer Science
 nav: true
-nav_order: 5
+nav_order: 3
 ---
 
 Welcome all students to course CS 110- Introduction to Computer Science and Applications. I will post all important announcements, practice problems and some interesting stuff about computers on this page.

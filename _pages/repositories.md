@@ -5,7 +5,7 @@ title: repositories
 description: Some of my work and other interesting projects on GitHub
 nav: true
 description: Open source repositories and tools on GitHub
-nav_order: 3
+nav_order: 2
 ---
 
 ## GitHub users
