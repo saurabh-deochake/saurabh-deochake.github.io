@@ -16,9 +16,15 @@ Cloud cost optimization is a well studied topic, but the literature is scattered
 
 ## Pricing Models
 
-The paper covers eight pricing models across AWS, GCP, and Azure. On demand pricing offers flexibility but is expensive for long running workloads. Reserved instances offer up to 75 percent savings on AWS, 70 percent on GCP, and 80 percent on Azure with a commitment period of one to three years. Spot and preemptible instances offer up to 91 percent off on GCP but carry interruption risk. Savings plans provide a more flexible alternative to reserved instances. Hybrid pricing combines on premises and cloud resources. Consumption based pricing charges per unit of usage with demand sensitive rates. Tiered pricing offers volume discounts. Free tier options serve as an entry point but can mask costs at scale.
+The paper covers eight pricing models across AWS, GCP, and Azure. On demand pricing offers flexibility but is expensive for long running workloads. Reserved instances offer up to 75 percent savings on AWS, 70 percent on GCP, and 80 percent on Azure with a commitment period of one to three years. Spot and preemptible instances offer up to 91 percent off on GCP but carry interruption risk. Savings plans provide a more flexible alternative to reserved instances. Hybrid pricing combines on premises and cloud resources. Consumption based pricing charges per unit of usage with demand sensitive rates. Tiered pricing offers volume discounts based on usage volume. Free tier options serve as an entry point but can mask costs at scale.
+
+![GCP Compute Network Tiered Pricing](/assets/img/blog/tiered-pricing.png)
+*Figure 2. GCP Compute Network tiered pricing for egress in Iowa (us-central-1) versus Tokyo (asia-northeast-1). Price per GiB decreases with higher monthly usage.*
 
 The paper includes comparative tables for each model so you can look up the numbers for your specific instance type and region. The optimal choice depends on workload characteristics such as predictability, fault tolerance, duration, and scale.
+
+![AWS Spot Instance Pricing Trends](/assets/img/blog/spot-pricing-trends.png)
+*Figure 1. AWS spot instance pricing for c4.large, m4.large, and a1.large instances in us-east-1 over several months. Prices vary based on supply and demand.*
 
 ## Optimization Techniques
 
@@ -26,7 +32,13 @@ The core of the paper examines seven areas of cloud cost optimization.
 
 Right sizing compute resources eliminates waste from overprovisioning. A GCP n2 standard 16 instance costs $0.777 per hour compared to $0.388 per hour for an n2 standard 8 instance. If a workload only needs 8 vCPUs, that is $344 per month saved per instance. Spot instances deliver 60 to 73 percent savings over on demand pricing for fault tolerant workloads. ARM Graviton instances cost roughly 40 percent less than equivalent Intel instances on AWS.
 
+![Intel T3 vs ARM A1 Instance Pricing](/assets/img/blog/intel-vs-arm.png)
+*Figure 3. Comparing Intel-based T3 instances versus ARM-based A1 Graviton instances on AWS (Linux Reserved Instance Pricing). A1 instances offer significant cost savings across all sizes.*
+
 Data deduplication, compression, and lifecycle management policies reduce storage costs significantly. GCP Archive storage costs $0.0012 per GB per month compared to $0.020 per GB per month for Standard storage. The paper includes region by region pricing tables for all storage tiers across providers.
+
+![GCP Storage Tier Pricing by Region](/assets/img/blog/storage-tiers.png)
+*Figure 4. Comparison of Google Cloud Storage tiers (Standard, Nearline, Coldline, Archive) across five regions. Archive storage is the lowest cost option but has retrieval delays.*
 
 Network optimization covers CDNs, edge caching, traffic engineering, and data compression. Twitter adopted Parquet columnar compression for cloud backups, which reduces data transfer costs through column level encoding.
 
