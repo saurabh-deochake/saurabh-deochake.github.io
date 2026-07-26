@@ -73,13 +73,10 @@ The paper identifies six directions for future work:
 5. **Multi-cloud and hybrid cloud optimization** — strategies for environments spanning providers
 6. **Sustainability and green computing** — cost optimization intersected with carbon footprint reduction
 
-## The Paper
+## Links
 
-If you work in cloud infrastructure, FinOps, or platform engineering, this is a reference you can return to when making architectural and pricing decisions.
-
-**[SSRN/Elsevier](https://ssrn.com/abstract=4519171)** | **[arXiv](https://arxiv.org/abs/2307.12479)**
-
-If you find it useful, please cite it:
+- [SSRN/Elsevier](https://ssrn.com/abstract=4519171)
+- [arXiv](https://arxiv.org/abs/2307.12479)
 
 ```bibtex
 @article{deochake2023cloudcostoptimization,
