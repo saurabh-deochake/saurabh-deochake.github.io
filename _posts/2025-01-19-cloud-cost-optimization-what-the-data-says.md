@@ -3,75 +3,58 @@ layout: post
 title:  "What I Learned Writing a Comprehensive Review on Cloud Cost Optimization"
 date:   2025-01-19
 comments: true
-description: A walkthrough of my SSRN paper on cloud cost optimization — pricing models, optimization techniques, and what Amazon Prime Video and Pinterest's case studies teach us about spending less on cloud infrastructure.
+description: A walkthrough of my SSRN paper on cloud cost optimization covering pricing models, optimization techniques, and case studies from Amazon Prime Video and Pinterest.
 tags: cloud finops cost-optimization aws gcp azure devops
 categories: cloud
 ---
 
-I spent several months writing a comprehensive review paper on cloud cost optimization. The result, **[Cloud Cost Optimization: A Comprehensive Review of Strategies and Case Studies](https://ssrn.com/abstract=4519171)**, is now available on SSRN/Elsevier and arXiv.
-
-This post walks through what the paper covers, the case studies it examines, and why I think this reference is worth your time if you work with cloud infrastructure.
+I spent several months writing a comprehensive review paper on cloud cost optimization. The result, [Cloud Cost Optimization: A Comprehensive Review of Strategies and Case Studies](https://ssrn.com/abstract=4519171), is now available on SSRN/Elsevier and arXiv. This post walks through what the paper covers and the case studies it examines.
 
 ## Why This Paper
 
-Cloud cost optimization is a well-trodden topic, but the literature is scattered across vendor documentation, engineering blogs, and conference talks. There wasn't a single source that covered pricing models, optimization techniques, and real-world case studies together with academic rigor.
-
-The paper fills that gap. It's structured in three parts: pricing models, optimization techniques, and case studies.
+Cloud cost optimization is a well studied topic, but the literature is scattered across vendor documentation, engineering blogs, and conference talks. There was not a single source that covered pricing models, optimization techniques, and real world case studies together with academic rigor. The paper fills that gap. It is structured in three parts: pricing models, optimization techniques, and case studies.
 
 ## Pricing Models
 
-The paper covers eight pricing models across AWS, GCP, and Azure: on-demand, reserved, spot/preemptible, savings plans, hybrid, consumption-based, tiered, and free-tier. Each section includes provider-specific pricing data and trade-offs.
+The paper covers eight pricing models across AWS, GCP, and Azure. On demand pricing offers flexibility but is expensive for long running workloads. Reserved instances offer up to 75 percent savings on AWS, 70 percent on GCP, and 80 percent on Azure with a commitment period of one to three years. Spot and preemptible instances offer up to 91 percent off on GCP but carry interruption risk. Savings plans provide a more flexible alternative to reserved instances. Hybrid pricing combines on premises and cloud resources. Consumption based pricing charges per unit of usage with demand sensitive rates. Tiered pricing offers volume discounts. Free tier options serve as an entry point but can mask costs at scale.
 
-The takeaway isn't that one model is best — it's that the right choice depends on workload characteristics. Predictable, long-running workloads benefit from reserved instances or savings plans (up to 75% off on-demand with AWS). Fault-tolerant batch workloads can use spot instances (up to 91% off with GCP preemptible VMs). The paper includes comparative tables for each model so you can look up the numbers for your specific instance type and region.
+The paper includes comparative tables for each model so you can look up the numbers for your specific instance type and region. The optimal choice depends on workload characteristics such as predictability, fault tolerance, duration, and scale.
 
 ## Optimization Techniques
 
-The core of the paper examines seven areas:
+The core of the paper examines seven areas of cloud cost optimization.
 
-**Compute.** Right-sizing, autoscaling, spot instances, reserved instances, serverless, containerization, and instance type selection (ARM Graviton vs. Intel). Includes concrete pricing comparisons — for example, AWS A1 Graviton instances cost roughly 40% less than equivalent T3 Intel instances.
+Right sizing compute resources eliminates waste from overprovisioning. A GCP n2 standard 16 instance costs $0.777 per hour compared to $0.388 per hour for an n2 standard 8 instance. If a workload only needs 8 vCPUs, that is $344 per month saved per instance. Spot instances deliver 60 to 73 percent savings over on demand pricing for fault tolerant workloads. ARM Graviton instances cost roughly 40 percent less than equivalent Intel instances on AWS.
 
-**Storage.** Data deduplication, compression, lifecycle management, and archival. GCP Archive storage at $0.0012/GB/month versus Standard at $0.020/GB/month is a 16.7x difference. The paper includes region-by-region pricing tables.
+Data deduplication, compression, and lifecycle management policies reduce storage costs significantly. GCP Archive storage costs $0.0012 per GB per month compared to $0.020 per GB per month for Standard storage. The paper includes region by region pricing tables for all storage tiers across providers.
 
-**Network.** CDNs, edge caching, traffic engineering, and data compression. Twitter's use of Parquet columnar compression for cloud backups is highlighted as a practical example.
+Network optimization covers CDNs, edge caching, traffic engineering, and data compression. Twitter adopted Parquet columnar compression for cloud backups, which reduces data transfer costs through column level encoding.
 
-**Logging.** Log filtering, compression (Twitter's LZO, Facebook's ZStandard), tiered storage, and retention policies. A simple filter that stores only errors and critical events can reduce log storage by 90%.
+Log filtering, compression, tiered storage, and retention policies manage logging costs. Twitter uses LZO compression for Scribe event logs and Facebook uses the ZStandard library for live logging data. A simple filter that stores only errors and critical events can reduce log storage by 90 percent.
 
-**Resource Recommendations.** AWS Cost Explorer, GCP Recommenders, and Azure Advisor — what each offers and where they excel.
+All three major providers offer machine learning powered recommendation engines. AWS provides Cost Explorer, GCP offers Recommenders, and Azure has Advisor. The paper catalogs what each tool offers and where they perform best.
 
-**Committed Use Discounts.** A worked example: a GCP `n2-standard-16` at 1,000 vCPU hours/day saves $79,546/year with a 1-year CUD and $177,659 over three years.
+Committed use discounts provide substantial savings for predictable workloads. A GCP n2 standard 16 instance at 1000 vCPU hours per day saves $79,546 per year with a one year commitment and $177,659 over three years.
 
-**System Re-architecture.** Microservices vs. monolithic, VM-to-container migration, serverless adoption, and autoscaling policies. Each with trade-off analysis.
+System re architecture covers microservices versus monolithic design, VM to container migration, serverless adoption, and autoscaling policies. Each approach includes trade off analysis for different workload types.
 
 ## Case Studies
 
-### Amazon Prime Video: 90% Cost Reduction
+### Amazon Prime Video
 
-Prime Video's audio-video monitoring service used AWS Step Functions for orchestration and S3 for frame storage. At scale, the per-state-transition pricing of Step Functions and Tier-1 S3 calls made the architecture prohibitively expensive.
+Prime Video operated an audio video monitoring service built as a distributed microservices architecture using AWS Step Functions for orchestration and Amazon S3 for frame storage. At scale, the per state transition pricing of Step Functions and Tier 1 S3 calls made the architecture prohibitively expensive.
 
-They re-architected to a monolith — all components in a single process, no Step Functions, no S3. The result: 90% cost reduction and the ability to handle more traffic.
+The team re architected the service to a monolith with all components running in a single process. This eliminated the need for Step Functions and S3 entirely. The result was a 90 percent reduction in cost and the ability to handle more traffic. The case study demonstrates that microservices are not automatically the more cost effective choice.
 
-The finding that goes against prevailing wisdom: sometimes a monolith is the more cost-effective choice. Microservices aren't automatically better.
+### Pinterest
 
-### Pinterest: 35% Platform Cost Reduction
+Pinterest ran Flink data processing clusters on YARN and encountered noisy neighbor problems, CPU banding, and inefficient resource allocation.
 
-Pinterest's Flink data processing clusters ran into noisy neighbor problems, CPU banding, and inefficient resource allocation across YARN clusters.
-
-Their optimization path:
-- CGroups soft CPU limits → 20% cluster reduction
-- i3 to i4i instance migration → 40% CPU usage reduction at 10% cost increase
-- Task placement and colocation optimization → 50-90% cost reduction on individual jobs
-- Combined: **35% total reduction** on the Stream Processing Platform
+The team implemented CGroups soft CPU limits to address CPU isolation issues, which allowed them to downsize their clusters by 20 percent. They migrated from AWS i3 instances to i4i instances, achieving a 40 percent reduction in CPU usage at a 10 percent cost increase. Task placement and colocation optimization reduced costs by 50 to 90 percent on individual jobs. The combined effect was a 35 percent total reduction on the Stream Processing Platform.
 
 ## Future Research
 
-The paper identifies six directions for future work:
-
-1. **Automated monitoring and optimization** — ML-driven frameworks for continuous cost optimization
-2. **Advanced resource allocation** — predictive provisioning based on workload characteristics
-3. **Cost-performance trade-off analysis** — formal methods for balancing savings with quality
-4. **Adaptive scaling and bursting** — cost-aware autoscaling algorithms
-5. **Multi-cloud and hybrid cloud optimization** — strategies for environments spanning providers
-6. **Sustainability and green computing** — cost optimization intersected with carbon footprint reduction
+The paper identifies six directions for future work. Automated monitoring and optimization using machine learning can continuously identify and fix inefficiencies. Advanced resource allocation techniques can predict workload characteristics and provision resources proactively. Cost performance trade off analysis provides formal methods for balancing savings with service quality. Adaptive scaling and bursting algorithms can account for cost constraints alongside workload patterns. Multi cloud and hybrid cloud optimization addresses environments that span multiple providers. Finally, the intersection of cost optimization and sustainability connects cloud spending with carbon footprint reduction.
 
 ## Links
 
@@ -92,4 +75,4 @@ The paper identifies six directions for future work:
 
 ---
 
-*If you're building cloud infrastructure at scale, I'd love to hear how these strategies apply to your environment. Reach out on [Twitter](https://twitter.com/saurabhd04) or [LinkedIn](https://www.linkedin.com/in/saurabhdeochake).*
+*If you are building cloud infrastructure at scale, I would appreciate hearing how these strategies apply to your environment. Reach out on [Twitter](https://twitter.com/saurabhd04) or [LinkedIn](https://www.linkedin.com/in/saurabhdeochake).*
