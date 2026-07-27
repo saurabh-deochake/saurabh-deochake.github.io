@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What I Learned Writing a Comprehensive Review on Cloud Cost Optimization"
-date:   2025-01-19
+date:   2026-07-26
 comments: true
 description: A walkthrough of my SSRN paper on cloud cost optimization covering pricing models, optimization techniques, and case studies from Amazon Prime Video and Pinterest.
 tags: cloud finops cost-optimization aws gcp azure devops
