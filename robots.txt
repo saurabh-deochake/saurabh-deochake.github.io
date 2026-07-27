@@ -1,6 +1,3 @@
----
-permalink: /robots.txt
----
 # Allow all standard crawlers
 User-agent: *
 Disallow:
@@ -24,4 +21,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://saurabhdeochake.com/sitemap.xml
